@@ -1,6 +1,6 @@
 import os
-import random
 import math
+
 
 class calculator():
     def __init__(self,num1, num2)->int:
