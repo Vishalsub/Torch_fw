@@ -1,0 +1,32 @@
+digraph G {
+"base_footprint" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 13.333\nBuffer length: 0.3\nMost recent transform: 2974.756\nOldest transform: 2974.456\n"];
+"base_link" -> "chassis_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "two_d_lidar"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "Left_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"big_triangle_middle" -> "Link_2"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"Link_pair_2" -> "big_triangle_middle"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"big_triangle_middle" -> "Link_3"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"big_triangle_mirror_1" -> "Link_4"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"Link_pair_3" -> "big_triangle_mirror_1"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"big_non_actuated_triangle_mirror" -> "Link_5"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"link_1" -> "big_non_actuated_triangle_mirror"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"small_triangle_1" -> "Link_6"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"Link_2" -> "small_triangle_1"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"small_triangle_mirror_1" -> "Link_7"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"Link_3" -> "small_triangle_mirror_1"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"big_non_actuated_triangle_1" -> "Link_8"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"Link_4" -> "big_non_actuated_triangle_1"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"base_link" -> "Link_pair_1"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"base_link" -> "Link_pair_2"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"base_link" -> "Link_pair_3"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"base_link" -> "Right_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"big_triangle_1" -> "link_1"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"Link_pair_1" -> "big_triangle_1"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"Link_7" -> "rectangle_link"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+"Link_6" -> "rectangle_mirror_link"[label=" Broadcaster: default_authority\nAverage rate: 22.857\nBuffer length: 0.35\nMost recent transform: 2974.757\nOldest transform: 2974.407\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1730897117.5267246"[ shape=plaintext ] ;
+}->"odom";
+}
